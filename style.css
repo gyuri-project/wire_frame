@@ -1,0 +1,112 @@
+@import url("https://font.elice.io/css?family=Elice+DX+Neolli");
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Elice DX Neolli';
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.box1,
+.box2,
+.box3,
+footer {
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    background-color: #eee;
+    height: 100vh;
+}
+
+.box2 {
+    background-color: #ccc;
+    height: 80vh;
+}
+
+.box3 {
+    background-color: #999;
+    height: 80vh;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    height: 30vh;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav>li {
+    position: relative;
+    width: 150px;
+    text-align: center;
+}
+
+.nav>li>a {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.nav>li>a:hover {
+    color: palevioletred;
+}
+
+.sub {
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+.sub li a {
+    display: block;
+    padding: 10px 0;
+    background-color: palevioletred;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.sub li a:hover {
+    background-color: #b4164b;
+}
+
+.nav li:hover .sub {
+    display: block;
+}
